@@ -1,0 +1,334 @@
+html,
+* {
+    behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 16px;
+    color: $blue;
+    background: $bg;
+    behavior: smooth;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+@media(min-width:1350px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+a {
+    transition: all 0.3s ease
+}
+
+.btn {
+    &.btn-success {
+        border-radius: 7px;
+        box-shadow: 0px 5px 3.5px rgba(78, 73, 73, 0.16);
+        background-color: $green;
+        font-size: 18px;
+        color: #fbfbfb;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 500;
+    color: $green;
+}
+
+.green-text {
+    color: $green !important;
+}
+
+.rate-desc {
+    font-weight: 500;
+    font-size: 17px;
+    span {
+        font-weight: 600;
+    }
+}
+
+.carousel-item {
+    position: relative;
+    float: left;
+    margin-left: 0;
+    .carousel-caption {
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(105, 158, 35, 0.8);
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+}
+
+.carousel-control-next {
+    right: auto;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    background-color: #DDE8FB;
+    opacity: 1;
+    border-radius: 50%;
+    &.active {
+        background-color: $green;
+    }
+}
+
+@media(min-width:992px) {
+    .small-gap {
+        .col-4 {
+            padding: 0 10px
+        }
+    }
+}
+
+p {
+    a {
+        color: $green;
+    }
+}
+
+.card {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px #1010103D;
+    border: 1px solid #E2E2E2;
+    text-align: right;
+    .serv-imgs {
+        position: relative;
+        img.w-100 {
+            border-radius: 5px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+    .card-title {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: right;
+        margin-top: 10px;
+    }
+    .freelancer-serv {
+        .user-img {
+            img {
+                max-width: 55px !important;
+            }
+            .active {
+                top: 1px !important;
+                right: 3px !important;
+                width: 10px !important;
+                height: 10px !important;
+            }
+        }
+        h4 {
+            display: inline-block;
+            span {
+                display: block;
+                color: #CBCBCB;
+            }
+        }
+    }
+}
+
+.tooltip-inner {
+    background-color: $blue;
+    min-width: 70px;
+}
+
+.tooltip.bs-tooltip-bottom .arrow:before {
+    border-bottom-color: $blue !important;
+}
+
+.dropdown {
+    .dropdown-menu {
+        padding: 0 10px;
+        .dropdown-item {
+            padding: 10px 0 7px 0;
+            border-bottom: 1px solid #DEE7DD;
+            font-size: 18px;
+            font-weight: 500;
+            color: #2C5870;
+            &:hover,
+            &:focus {
+                background-color: transparent
+            }
+            i {
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.carousel {
+    overflow: hidden;
+    &:hover {
+        .carousel-control-next,
+        .carousel-control-prev {
+            opacity: 1;
+        }
+    }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 0;
+    height: 55px;
+    width: 55px;
+    top: calc(50% - 25px);
+    background: #fff;
+    border-radius: 50%;
+    background: #fff;
+    i {
+        color: $green;
+        font-size: 24px;
+    }
+}
+
+.carousel-control-next {
+    justify-content: flex-start;
+    padding-right: 14px;
+    transform: translateX(-22px);
+}
+
+.carousel-control-prev {
+    justify-content: flex-end;
+    padding-left: 14px;
+    transform: translateX(22px);
+}
+
+p {
+    font-weight: 500;
+    color: #396A77;
+}
+
+@media(min-width:992px) {
+    .no-title {
+        padding-top: 36px;
+    }
+    .offset-lg-1 {
+        margin-right: 0;
+    }
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+@media(min-width:768px) {
+    .slick-next {
+        right: -15px;
+    }
+    .slick-prev {
+        left: -15px;
+    }
+}
+
+.slick-next,
+.slick-prev {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #FBFBFB;
+    box-shadow: 0px 10px 20px #699E2329;
+    z-index: 99;
+    i {
+        font-size: 18px;
+        color: #699E23;
+    }
+}
+
+.search-select {
+    font-size: 18px;
+    @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css");
+    select {
+        display: none;
+        /*hide original SELECT element:*/
+        option {
+            font-family: 'FontAwesome';
+        }
+        .select-selected {
+            font-family: 'Font Awesome 5 Free';
+            &:after {
+                position: absolute;
+                content: "";
+                top: 14px;
+                right: 10px;
+                width: 0;
+                height: 0;
+                border: 6px solid transparent;
+                border-color: #fff transparent transparent transparent;
+            }
+        }
+    }
+    .select-selected {
+        height: 42px;
+        background: #fff;
+        line-height: 33px;
+        border-right: 2px solid $green;
+        padding: 5px 10px;
+        color: $blue;
+        font-weight: 500;
+        cursor: pointer;
+        background-position: right 10px center;
+        background-size: 25px auto;
+        font-family: 'Font Awesome 5 Free';
+        .fa {
+            color: green;
+        }
+    }
+    /*style items (options):*/
+    .select-items {
+        position: absolute;
+        background-color: #fff;
+        padding: 0;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        box-shadow: 0px 4px 8px #1010103D;
+        div {
+            padding: 10px 10px 7px 10px;
+            border-bottom: 1px solid #DEE7DD;
+            font-size: 18px;
+            font-weight: 500;
+            color: #2C5870;
+            cursor: pointer;
+            font-family: 'Font Awesome 5 Free';
+            &:hover {
+                background-color: #EDF0F4;
+            }
+        }
+    }
+    /*hide the items when the select box is closed:*/
+    .select-hide {
+        display: none;
+    }
+}
