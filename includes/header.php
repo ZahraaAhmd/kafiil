@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/bootstrap-multiselect.css" />
+    <link href="css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">

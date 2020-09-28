@@ -21,6 +21,13 @@ $(".suggest-slider").slick({
                 slidesToShow: 2,
                 slidesToScroll: 1
             }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
         }
     ]
 });
@@ -65,6 +72,20 @@ $(".qt-minus").click(function() {
     }
 
     $(this).parent().children(".full-price").addClass("minused");
+
+});
+
+/***home page scripts **** */
+
+/**select2 js**/
+
+$(function() {
+
+    $('.multi-select').multiselect({
+
+        includeSelectAllOption: true
+
+    });
 
 });
 

@@ -1,0 +1,50 @@
+/**** home page style ***/
+
+
+/*** title banner ***/
+
+.title-banner {
+    background: #ECCD00;
+    padding: 10px 0;
+    .title {
+        color: $blue;
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+
+/** home slider style ***/
+
+.home-slider {
+    .carousel-indicators {
+        bottom: 25px;
+        li {
+            width: 17px;
+            height: 17px;
+            background-color: $blue;
+            &.active {
+                background-color: $green;
+            }
+        }
+    }
+}
+
+
+/**page-content styles **/
+
+.page-content {
+    /**search-block style **/
+    .search-block {
+        background: #F8F9FD;
+        box-shadow: 0px 10px 6px #14466029;
+        ul.filter-menu {
+            display: block;
+            list-style-type: none;
+            margin: 0;
+            li.menu-button {
+                display: inline-block;
+            }
+        }
+    }
+}

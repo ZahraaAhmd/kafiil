@@ -735,6 +735,55 @@ p {
   height: 100%;
 }
 
+/**** home page style ***/
+/*** title banner ***/
+.title-banner {
+  background: #ECCD00;
+  padding: 10px 0;
+}
+
+.title-banner .title {
+  color: #144660;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/** home slider style ***/
+.home-slider .carousel-indicators {
+  bottom: 25px;
+}
+
+.home-slider .carousel-indicators li {
+  width: 17px;
+  height: 17px;
+  background-color: #144660;
+}
+
+.home-slider .carousel-indicators li.active {
+  background-color: #699E23;
+}
+
+/**page-content styles **/
+.page-content {
+  /**search-block style **/
+}
+
+.page-content .search-block {
+  background: #F8F9FD;
+  -webkit-box-shadow: 0px 10px 6px #14466029;
+          box-shadow: 0px 10px 6px #14466029;
+}
+
+.page-content .search-block ul.filter-menu {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+}
+
+.page-content .search-block ul.filter-menu li.menu-button {
+  display: inline-block;
+}
+
 /**** start service-details page style ***/
 .service-details {
   padding: 10px 0;
@@ -1782,6 +1831,63 @@ p {
   }
   .comment-block img.col-auto {
     display: none;
+  }
+}
+
+@media (min-width: 550px) {
+  .show-xs {
+    display: none !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .hide-xs {
+    display: none !important;
+  }
+  .show-xs {
+    display: block !important;
+  }
+  .service-details .service-container .tabs-head .float-left {
+    margin-top: 7px;
+  }
+  .service-details .service-container .tabs-head .float-left .dropdown .dropdown-toggle,
+  .service-details .service-container .tabs-head .float-left .fa-heart {
+    font-size: 18px;
+  }
+  .service-details .service-container .tabs-head ul li a {
+    font-size: 14px;
+    padding: 15px 7px;
+  }
+  .service-details .service-container .tabs-head .float-left .dropdown .dropdown-toggle {
+    padding-right: 3px;
+    padding-left: 5px;
+  }
+  .serv-block .serv-content form .custom-control {
+    padding-left: 0;
+    font-size: 14px;
+  }
+  .serv-block .serv-content .add-serv .add-more {
+    zoom: 0.8;
+  }
+  .serv-block .serv-content .price {
+    font-size: 20px;
+  }
+  .serv-block .serv-content a.float-left {
+    float: none !important;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .serv-block .serv-content a.float-left i {
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 500px) {
+  .card .serv-imgs img.w-100 {
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

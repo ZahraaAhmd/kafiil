@@ -294,3 +294,60 @@
         display: none
     }
 }
+
+@media(min-width:550px) {
+    .show-xs {
+        display: none !important;
+    }
+}
+
+@media(max-width:550px) {
+    .hide-xs {
+        display: none !important;
+    }
+    .show-xs {
+        display: block !important;
+    }
+    .service-details .service-container .tabs-head .float-left {
+        margin-top: 7px;
+    }
+    .service-details .service-container .tabs-head .float-left .dropdown .dropdown-toggle,
+    .service-details .service-container .tabs-head .float-left .fa-heart {
+        font-size: 18px;
+    }
+    .service-details .service-container .tabs-head ul li a {
+        font-size: 14px;
+        padding: 15px 7px;
+    }
+    .service-details .service-container .tabs-head .float-left .dropdown .dropdown-toggle {
+        padding-right: 3px;
+        padding-left: 5px;
+    }
+    .serv-block .serv-content form .custom-control {
+        padding-left: 0;
+        font-size: 14px;
+    }
+    .serv-block .serv-content .add-serv .add-more {
+        zoom: 0.8;
+    }
+    .serv-block .serv-content .price {
+        font-size: 20px;
+    }
+    .serv-block .serv-content a.float-left {
+        float: none !important;
+        width: 100%;
+        text-align: center;
+        display: block;
+        font-weight: bold;
+        font-size: 20px;
+        i {
+            vertical-align: middle;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .card .serv-imgs img.w-100 {
+        height: auto;
+    }
+}
