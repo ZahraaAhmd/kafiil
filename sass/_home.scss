@@ -159,4 +159,27 @@
 }
 
 
-/*** bread-block style ***/
+/*** page-pagination style ***/
+
+.page-pagination {
+    .pagination {
+        justify-content: center;
+        .page-item {
+            margin: 10px 5px;
+            .page-link {
+                border-radius: 0;
+                background-color: $green;
+                color: #fff;
+                border-color: transparent;
+                font-size: 20px;
+                padding: 7px 15px;
+            }
+            &.active {
+                .page-link {
+                    border-radius: 0;
+                    background-color: $blue;
+                }
+            }
+        }
+    }
+}

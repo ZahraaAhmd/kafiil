@@ -1032,7 +1032,31 @@ p {
   color: #D5E3C3;
 }
 
-/*** bread-block style ***/
+/*** page-pagination style ***/
+.page-pagination .pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-pagination .pagination .page-item {
+  margin: 10px 5px;
+}
+
+.page-pagination .pagination .page-item .page-link {
+  border-radius: 0;
+  background-color: #699E23;
+  color: #fff;
+  border-color: transparent;
+  font-size: 20px;
+  padding: 7px 15px;
+}
+
+.page-pagination .pagination .page-item.active .page-link {
+  border-radius: 0;
+  background-color: #144660;
+}
+
 /**** start service-details page style ***/
 .service-details {
   padding: 10px 0;
