@@ -55,6 +55,10 @@ $(document).ready(function() {
         $(".search-form").toggleClass('active-form');
     });
 
+    $(".title-banner .title").click(function() {
+        $(".title-banner").slideUp();
+    });
+
 });
 
 
@@ -291,3 +295,9 @@ function _select_option(indx, selc) {
     select_.onchange();
     salir_select(selc);
 }
+
+/**card slider **/
+
+$('.card .carousel').carousel({
+    interval: false,
+});

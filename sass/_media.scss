@@ -233,6 +233,14 @@
     .serv-block .sale-icon img {
         max-width: 50px;
     }
+    .page-content .search-block ul.filter-menu li.menu-button.float-left {
+        float: none !important;
+        border: 0
+    }
+    .page-content .search-block ul.filter-menu .dropdown-menu {
+        transform: translate3d(0, 0px, 0px) !important;
+        top: 100% !important;
+    }
 }
 
 @media(max-width:767.98px) {
@@ -258,6 +266,9 @@
         .float-left {
             float: none !important;
             text-align: left;
+            .serv-rate {
+                text-align: center;
+            }
         }
     }
     #add-to-service.serv-block .serv-content form .btn {
@@ -293,6 +304,45 @@
     .comment-block img.col-auto {
         display: none
     }
+    .page-content .search-block ul.filter-menu,
+    .title-banner {
+        zoom: 0.8
+    }
+    .main-menu {
+        display: none;
+    }
+    .home-slider .carousel-indicators {
+        bottom: -12px;
+    }
+}
+
+@media(max-width:600px) {
+    .page-content .search-block ul.filter-menu {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        li.menu-button {
+            width: 100%;
+            max-width: 33.33333%;
+            flex: 0 0 33.33333%;
+            text-align: center;
+            &:nth-child(1),
+            &:nth-child(2) {
+                width: 100%;
+                max-width: 50%;
+                flex: 0 0 50%;
+                border-bottom: 1px solid rgba(105, 158, 35, 0.4);
+            }
+            &:first-child .btn {
+                padding-right: 0.75rem;
+            }
+        }
+    }
+    .home-slider .carousel-indicators li {
+        width: 12px;
+        height: 12px;
+    }
 }
 
 @media(min-width:550px) {
@@ -307,6 +357,10 @@
     }
     .show-xs {
         display: block !important;
+    }
+    .block-sm {
+        display: block;
+        margin-bottom: 5px;
     }
     .service-details .service-container .tabs-head .float-left {
         margin-top: 7px;
@@ -344,10 +398,19 @@
             vertical-align: middle;
         }
     }
+    .comment-block .name .comment-time {
+        margin-right: 0;
+    }
 }
 
 @media(max-width:500px) {
     .card .serv-imgs img.w-100 {
         height: auto;
+    }
+}
+
+@media(max-width:420px) {
+    .rating-block .rate-head .rating {
+        display: none;
     }
 }

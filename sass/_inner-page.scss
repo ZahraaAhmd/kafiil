@@ -170,30 +170,6 @@
     }
     .serv-head {
         background: $gray;
-        padding: 10px;
-        border-bottom: 2px solid rgba(162, 162, 162, 0.5);
-        color: $blue;
-        font-weight: 500;
-        position: relative;
-        font-size: 20px;
-        &::after {
-            display: block;
-            content: "";
-            width: 125px;
-            height: 4px;
-            background: $green;
-            right: 0;
-            position: absolute;
-            bottom: -3px;
-        }
-        .float-left {
-            font-size: 17px;
-            vertical-align: middle;
-            line-height: 31px;
-            i {
-                vertical-align: middle;
-            }
-        }
     }
     .sale-icon {
         position: absolute;

@@ -39,18 +39,7 @@
                 </div>
                 <div class="box-content">
                     <div class="service-name">
-                        <div class="right">
-                            <div class="title">تفريغ بوستات ومحو محتوى كامل لجميع صفحات فيسبوك </div>
-                            <!-- start page breadcrumb -->
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#"><i class="fa fa-"></i> تسويق الكتروني</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">التسويق على فيسبوك</li>
-                                </ol>
-                            </nav>
-                            <!-- start page breadcrumb -->
-                        </div>
-
+                        
                         <!-- start service rate -->
                         <div class="float-left">
                             <div class="serv-rate">
@@ -63,6 +52,18 @@
                             </div>
                         </div>
                         <!-- end service rate -->
+                        <div class="right">
+                            <div class="title">تفريغ بوستات ومحو محتوى كامل لجميع صفحات فيسبوك </div>
+                            <!-- start page breadcrumb -->
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#"><i class="fa fa-"></i> تسويق الكتروني</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">التسويق على فيسبوك</li>
+                                </ol>
+                            </nav>
+                            <!-- start page breadcrumb -->
+                        </div>
+
                     </div>
                     <div class="row">
 

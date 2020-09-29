@@ -146,10 +146,51 @@ p {
         }
         h4 {
             display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
             span {
                 display: block;
                 color: #CBCBCB;
             }
+        }
+        .price {
+            color: #699E23;
+            font-weight: 500;
+            font-size: 22px;
+        }
+    }
+    .serv-rate {
+        color: $yellow;
+        border-top: 2px solid #e6e6e6;
+        padding-top: 6px;
+        margin-top: 5px;
+        small {
+            color: #A2A2A2
+        }
+        .float-left {
+            color: #CBCBCB;
+            .dropdown {
+                display: inline-block;
+                margin-right: 7px;
+            }
+            .btn {
+                background-color: transparent !important;
+                border: 0 !important;
+                padding: 0 !important;
+                color: #CBCBCB;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .sale-icon {
+        position: absolute;
+        z-index: 9;
+        left: 0;
+        top: -7px;
+        img {
+            max-width: 60px;
         }
     }
 }
@@ -330,5 +371,63 @@ p {
     /*hide the items when the select box is closed:*/
     .select-hide {
         display: none;
+    }
+}
+
+.serv-head {
+    padding: 10px;
+    border-bottom: 2px solid rgba(162, 162, 162, 0.5);
+    color: $blue;
+    font-weight: 500;
+    position: relative;
+    font-size: 20px;
+    &::after {
+        display: block;
+        content: "";
+        width: 125px;
+        height: 4px;
+        background: $green;
+        right: 0;
+        position: absolute;
+        bottom: -3px;
+    }
+    .float-left {
+        font-size: 17px;
+        vertical-align: middle;
+        line-height: 31px;
+        i {
+            vertical-align: middle;
+        }
+    }
+}
+
+.form-control {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.bread-block {
+    .breadcrumb {
+        background-color: transparent;
+        margin-top: 25px;
+        li {
+            font-weight: bold;
+            font-size: 22px;
+            a {
+                color: $green;
+            }
+            &.active {
+                color: $blue;
+                font-weight: 500;
+            }
+        }
+        .breadcrumb-item+.breadcrumb-item::before {
+            font-family: 'Font Awesome 5 Free';
+            content: "\f104";
+            font-weight: 900;
+            padding-right: 0;
+            vertical-align: middle;
+            color: $green;
+        }
     }
 }

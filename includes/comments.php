@@ -143,7 +143,7 @@
                                 <div class="row">
                                     <img src="images/img.jpg" class="col-auto">
                                     <div class="col">
-                                        <div class="name">اسم المستخدم
+                                        <div class="name"><span class="block-sm">اسم المستخدم</span>
                                             <span class="comment-time"> <i class="far fa-calendar-alt"></i> 16/08/2020</span>
                                             <span class="comment-time"> <i class="far fa-clock"></i> 12:30</span>
                                         </div>
@@ -203,7 +203,7 @@
                                         <div class="row mt-3">
                                             <img src="images/img.jpg" class="col-auto">
                                             <div class="col">
-                                                <div class="name">اسم المستخدم
+                                                <div class="name"><span class="block-sm">اسم المستخدم</span>
                                                     <span class="comment-time"> <i class="far fa-calendar-alt"></i> 16/08/2020</span>
                                                     <span class="comment-time"> <i class="far fa-clock"></i> 12:30</span>
                                                     <span class="serv-freelancer">بائع الخدمه</span>
@@ -229,7 +229,7 @@
                                 <div class="row">
                                     <img src="images/img.jpg" class="col-auto">
                                     <div class="col">
-                                        <div class="name">اسم المستخدم
+                                        <div class="name"><span class="block-sm">اسم المستخدم</span>
                                             <span class="comment-time"> <i class="far fa-calendar-alt"></i> 16/08/2020</span>
                                             <span class="comment-time"> <i class="far fa-clock"></i> 12:30</span>
                                         </div>
@@ -294,7 +294,7 @@
                                 <div class="row">
                                     <img src="images/img.jpg" class="col-auto">
                                     <div class="col">
-                                        <div class="name">اسم المستخدم
+                                        <div class="name"><span class="block-sm">اسم المستخدم</span>
                                             <span class="comment-time"> <i class="far fa-calendar-alt"></i> 16/08/2020</span>
                                             <span class="comment-time"> <i class="far fa-clock"></i> 12:30</span>
                                         </div>
@@ -359,7 +359,7 @@
                                 <div class="row">
                                     <img src="images/img.jpg" class="col-auto">
                                     <div class="col">
-                                        <div class="name">اسم المستخدم
+                                        <div class="name"><span class="block-sm">اسم المستخدم</span>
                                             <span class="comment-time"> <i class="far fa-calendar-alt"></i> 16/08/2020</span>
                                             <span class="comment-time"> <i class="far fa-clock"></i> 12:30</span>
                                         </div>
