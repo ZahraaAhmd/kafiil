@@ -6,11 +6,42 @@
 .title-banner {
     background: #ECCD00;
     padding: 10px 0;
+    .announcement {
+        width: calc(100% - 15px);
+        display: inline-block;
+        .slick-list {
+            margin-right: 50px;
+        }
+        .slick-next,
+        .slick-prev {
+            background: transparent;
+            box-shadow: none;
+            width: auto;
+            height: auto;
+            &::before {
+                display: none;
+            }
+            i {
+                color: $blue;
+                font-size: 30px;
+            }
+        }
+        .slick-next {
+            right: 0;
+        }
+        .slick-prev {
+            left: auto;
+            right: 25px;
+        }
+    }
     .title {
         color: $blue;
         font-weight: 600;
         font-size: 20px;
+    }
+    .fa-close {
         cursor: pointer;
+        vertical-align: super;
     }
 }
 
@@ -86,11 +117,6 @@
                         }
                     }
                 }
-                &:first-child {
-                    .btn {
-                        padding-right: 0;
-                    }
-                }
             }
             /* Hidden placeholder */
             select option[disabled]:first-child {
@@ -109,6 +135,9 @@
                     font-size: 18px;
                     font-weight: 500;
                     color: #2C5870;
+                    &:hover {
+                        background-color: #EEEEEE;
+                    }
                     a {
                         width: 100%;
                         display: block;

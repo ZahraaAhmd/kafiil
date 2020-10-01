@@ -25,7 +25,6 @@
         font-size: 16px;
     }
     .top-menu .bg-light {
-        text-align: center;
         .container {
             display: block;
         }
@@ -72,7 +71,7 @@
             max-width: 100%;
             width: auto;
             padding: 0;
-            margin: 0 10px;
+            margin: 0;
         }
         .small-right-menu {
             float: right;
@@ -262,12 +261,23 @@
     .top-menu .bg-light .nav-link.dropdown-toggle img {
         max-width: 35px;
     }
+    .service-details .service-container .service-name .right {
+        width: calc(100% - 50px);
+    }
     .service-details .service-container .service-name {
         .float-left {
+            width: 45px;
             float: none !important;
-            text-align: left;
+            display: inline-block;
+            vertical-align: top;
             .serv-rate {
-                text-align: center;
+                text-align: left;
+                i:not(:first-child) {
+                    display: none;
+                }
+                .rate-num small {
+                    display: block;
+                }
             }
         }
     }
@@ -314,10 +324,84 @@
     .home-slider .carousel-indicators {
         bottom: -12px;
     }
+    .popup-sm {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.4);
+        top: 0;
+        z-index: 999;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        .filter-menu {
+            zoom: 1 !important;
+            background: #fff;
+            position: relative;
+            li.menu-button {
+                border-bottom: 1px solid rgba(105, 158, 35, 0.4);
+                width: 100%;
+            }
+            .fa-close {
+                position: absolute;
+                background: $blue;
+                color: #fff;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                left: -10px;
+                top: -15px;
+                -webkit-box-shadow: -1px 3px 14px -6px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: -1px 3px 14px -6px rgba(0, 0, 0, 0.75);
+                box-shadow: -1px 3px 14px -6px rgba(0, 0, 0, 0.75);
+            }
+        }
+    }
+    .home-slider .container {
+        padding: 0;
+    }
+    .search-block {
+        .filter-btn {
+            color: #144660;
+            font-weight: 500;
+            position: relative;
+            font-size: 20px;
+            padding: 10px;
+            i {
+                float: left;
+                margin-top: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+    .container.py-sm-0 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .serv-block .seo-words span {
+        min-width: auto;
+        margin-left: 0;
+        font-size: 14px;
+    }
+    .comment-block p {
+        margin-bottom: 5px;
+    }
+    .comment-block .row.mt-3 {
+        margin-right: 15px;
+        zoom: 0.8
+    }
+    .rate-desc .float-left {
+        display: none;
+    }
 }
 
 @media(max-width:600px) {
-    .page-content .search-block ul.filter-menu {
+    /* .page-content .search-block ul.filter-menu {
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -338,7 +422,7 @@
                 padding-right: 0.75rem;
             }
         }
-    }
+    }*/
     .home-slider .carousel-indicators li {
         width: 12px;
         height: 12px;
@@ -360,7 +444,9 @@
     }
     .block-sm {
         display: block;
-        margin-bottom: 5px;
+    }
+    .comment-block .name .comment-time {
+        font-size: 14px;
     }
     .service-details .service-container .tabs-head .float-left {
         margin-top: 7px;
@@ -389,11 +475,7 @@
     }
     .serv-block .serv-content a.float-left {
         float: none !important;
-        width: 100%;
-        text-align: center;
-        display: block;
-        font-weight: bold;
-        font-size: 20px;
+        margin-right: 10px;
         i {
             vertical-align: middle;
         }
@@ -412,5 +494,23 @@
 @media(max-width:420px) {
     .rating-block .rate-head .rating {
         display: none;
+    }
+    .top-menu .bg-light .navbar-brand img {
+        max-width: 50px;
+    }
+    .top-menu .bg-light .navbar-toggler {
+        padding: 0rem 0.5rem;
+    }
+    .top-menu .bg-light .nav-link {
+        padding: 0.5rem 0.4rem;
+    }
+    .top-menu .bg-light .hide-md ul {
+        height: auto;
+    }
+}
+
+@media(max-width:350px) {
+    .top-menu .bg-light {
+        zoom: 0.9
     }
 }

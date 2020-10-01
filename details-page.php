@@ -40,18 +40,7 @@
                 <div class="box-content">
                     <div class="service-name">
                         
-                        <!-- start service rate -->
-                        <div class="float-left">
-                            <div class="serv-rate">
-                                <i class="fas fa-star fa-2x"></i>
-                                <i class="fas fa-star fa-2x"></i>
-                                <i class="fas fa-star fa-2x"></i>
-                                <i class="fas fa-star fa-2x"></i>
-                                <i class="fas fa-star fa-2x"></i>
-                                <span class="rate-num">5.0<small>(32)</small></span>
-                            </div>
-                        </div>
-                        <!-- end service rate -->
+                        
                         <div class="right">
                             <div class="title">تفريغ بوستات ومحو محتوى كامل لجميع صفحات فيسبوك </div>
                             <!-- start page breadcrumb -->
@@ -63,7 +52,18 @@
                             </nav>
                             <!-- start page breadcrumb -->
                         </div>
-
+<!-- start service rate -->
+<div class="float-left">
+                            <div class="serv-rate">
+                                <i class="fas fa-star fa-2x"></i>
+                                <i class="fas fa-star fa-2x"></i>
+                                <i class="fas fa-star fa-2x"></i>
+                                <i class="fas fa-star fa-2x"></i>
+                                <i class="fas fa-star fa-2x"></i>
+                                <span class="rate-num">5.0<small>(32)</small></span>
+                            </div>
+                        </div>
+                        <!-- end service rate -->
                     </div>
                     <div class="row">
 
@@ -136,9 +136,12 @@
                                             <input type="checkbox" class="custom-control-input" id="serv4">
                                             <label class="custom-control-label" for="serv4">إضافة اخري <span class="float-left">$10</span></label>
                                         </div>
-                                        <div class="row pt-5 align-items-center">
+                                        <div class="row pt-sm-5 pt-3 align-items-center">
                                             <div class="col-md-4  col-6">
-                                                <h3>عدد مرات طلب الخدمة</h3>
+                                                <h3> 
+                                                <span class="hide-xs">عدد مرات طلب الخدمة</span>
+                                                    <span class="show-xs">عدد المرات</span>
+                                                </h3>
                                                 <div class="add-serv">
                                                     <span class="add-more">
                                                     <span class="qt-plus"><i class="fas fa-plus"></i></span>

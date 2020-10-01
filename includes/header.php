@@ -35,6 +35,12 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                         </li>
+               
+
+                </ul>
+                </div>
+                <div class="hide-md small-left-menu">
+                <ul>
                 <li class="nav-item">
                             <a class="nav-link search-icon" href="#">
                                 <i class="fas fa-search tooltip-icon" data-toggle="tooltip" data-placement="bottom" data-original-title="بحث"></i></a>
@@ -43,11 +49,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="far fa-bookmark tooltip-icon" data-toggle="tooltip" data-placement="bottom" title="الطلبات الوارده"></i></a>
                         </li>
-
-                </ul>
-                </div>
-                <div class="hide-md small-left-menu">
-                <ul>
                 <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fas fa-shopping-bag tooltip-icon" data-toggle="tooltip" data-placement="bottom" title="المشتريات"></i></a>
                         </li>

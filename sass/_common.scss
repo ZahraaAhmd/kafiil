@@ -409,7 +409,8 @@ p {
 .bread-block {
     .breadcrumb {
         background-color: transparent;
-        margin-top: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         li {
             font-weight: bold;
             font-size: 22px;
@@ -430,4 +431,15 @@ p {
             color: $green;
         }
     }
+}
+
+.slick-dots li button:before {
+    font-size: 15px;
+    color: $green;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    color: $blue;
+    opacity: 1;
 }
