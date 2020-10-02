@@ -576,6 +576,10 @@ p {
   opacity: 1;
 }
 
+.form-block {
+  border-radius: 10px;
+}
+
 /*** start top-menu style ****/
 .top-menu {
   position: relative;

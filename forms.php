@@ -1,13 +1,13 @@
 <?php include "includes/header.php"; ?>
 <?php include "includes/menu.php"; ?>
 <!-- start forms section -->
-<section class="forms">
+<section class="forms mb-5">
     <div class="container">
         <div class="form-block bg-white mt-4 ">
             <div class="serv-head">
                 إضافه للخدمه
             </div>
-            <div class="py-5">
+            <div class="px-5 py-4">
                 <div class="alert alert-success" role="alert">
                     <strong>رساله!</strong> رساله نصيه رساله نصيه رساله نصيه رساله نصيه رساله نصيه رساله نصيه
                     <i class="fas fa-close"></i>
