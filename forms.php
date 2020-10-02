@@ -74,11 +74,11 @@
                     <div class="form-group row">
                         <div class="col-12">
                             <label class="form-label"> : نص<sup>*</sup> </label>
-                            <div class="custom-control custom-checkbox-inline">
+                            <div class="custom-control custom-checkbox custom-control-inline">
                                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                                 <label class="custom-control-label" for="customCheck1">ذكر</label>
                             </div>
-                            <div class="custom-control custom-checkbox-inline">
+                            <div class="custom-control custom-checkbox custom-control-inline">
                                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                                 <label class="custom-control-label" for="customCheck1">انثى</label>
                             </div>
@@ -87,11 +87,11 @@
                     <div class="form-group row">
                         <div class="col-12">
                             <label class="form-label"> : نص<sup>*</sup> </label>
-                            <div class="custom-control custom-switch-inline">
+                            <div class="custom-control custom-switch custom-control-inline">
                                 <input type="checkbox" class="custom-control-input" id="customSwitch1">
                                 <label class="custom-control-label" for="customSwitch1">انجليزيه</label>
                             </div>
-                            <div class="custom-control custom-switch-inline">
+                            <div class="custom-control custom-switch custom-control-inline">
                                 <input type="checkbox" class="custom-control-input" id="customSwitch1">
                                 <label class="custom-control-label" for="customSwitch1">عربيه</label>
                             </div>

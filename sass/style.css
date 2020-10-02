@@ -580,6 +580,51 @@ p {
   border-radius: 10px;
 }
 
+.alert {
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 18px;
+}
+
+.alert .fa-close {
+  float: left;
+  color: rgba(33, 51, 9, 0.67);
+  margin-top: 7px;
+}
+
+.form-label {
+  color: #144660;
+  font-weight: 500;
+  width: 100%;
+}
+
+.form-label sup {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  top: 0;
+}
+
+.form-block .form-control {
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16) !important;
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16) !important;
+  border: 1px solid #A2A2A2 !important;
+  border-radius: 2px;
+}
+
+.form-block input,
+.form-block select {
+  height: 45px;
+}
+
+.form-block textarea {
+  height: 300px;
+}
+
+.form-block .custom-control-inline {
+  margin-right: 0;
+}
+
 /*** start top-menu style ****/
 .top-menu {
   position: relative;
