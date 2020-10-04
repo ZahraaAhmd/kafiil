@@ -25,10 +25,16 @@
 }
 
 .form-block {
-    .form-control {
+    .form-control,
+    .custom-select {
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16) !important;
         border: 1px solid #A2A2A2 !important;
         border-radius: 2px;
+    }
+    .custom-control-input,
+    .custom-control-input:focus~.custom-control-label::before {
+        outline: none !important;
+        box-shadow: none !important;
     }
     input,
     select {
@@ -39,5 +45,218 @@
     }
     .custom-control-inline {
         margin-right: 0;
+    }
+    .custom-radio .custom-control-label::before,
+    .custom-checkbox .custom-control-label::before {
+        border: 2px solid $blue;
+        width: 20px;
+        height: 20px;
+    }
+    .custom-checkbox .custom-control-label::after {
+        width: 16px;
+        height: 16px;
+        right: -21px;
+        top: 5px;
+    }
+    .custom-radio .custom-control-input:checked~.custom-control-label::before {
+        background-color: transparent;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+        background-color: $blue;
+    }
+    .custom-radio .custom-control-input:checked~.custom-control-label::after {
+        background-image: none;
+        width: 10px;
+        height: 10px;
+        top: 9px;
+        right: -18.7px;
+        background: $blue;
+        border-radius: 50%;
+    }
+    .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+        background-size: 15px;
+    }
+    .custom-switch .custom-control-label {
+        padding-right: 10px;
+    }
+    .custom-switch .custom-control-label::before {
+        width: 36px;
+        height: 14px;
+        background-color: rgba(0, 0, 0, 0.26);
+        border-radius: 14px;
+        z-index: 1;
+        -webkit-transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .custom-switch .custom-control-label::after {
+        width: 20px;
+        height: 20px;
+        top: 0px;
+        right: -42px;
+        background-color: #fff;
+        border-radius: 14px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        z-index: 2;
+        -webkit-transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+        -webkit-transition-property: left, background-color;
+        transition-property: left, background-color;
+    }
+    .custom-switch .custom-control-input:checked~.custom-control-label::after {
+        right: -30px;
+    }
+    .custom-switch .custom-control-input:checked~.custom-control-label::before {
+        background-color: $green;
+        border-color: $green;
+    }
+}
+
+.tags-block {
+    background: rgba(252, 252, 252, 70%);
+    border: 1px solid rgba(162, 162, 162, 70%);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16) !important;
+    padding: 10px;
+    .form-control {
+        border: 0 !important;
+        box-shadow: none !important;
+    }
+    .tags {
+        .tag {
+            display: inline-block;
+            background: $green;
+            padding: 5px 10px;
+            color: #FBFBFB;
+            border-radius: 3px;
+            margin-left: 10px;
+            i {
+                vertical-align: middle;
+                font-size: 12px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.btn {
+    &.w-4 {
+        width: 100%;
+        max-width: 300px;
+        color: #FBFBFB;
+        padding: 12px;
+        font-size: 20px;
+        &.btn-outline-success {
+            color: #699E23;
+            &:hover {
+                color: #fff;
+                background-color: $green;
+            }
+        }
+    }
+}
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+.dropzone {
+    position: relative;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16) !important;
+    border: 1px solid #A2A2A2 !important;
+    border-radius: 2px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    color: $blue;
+    font-size: 20px;
+    font-weight: 500;
+    &.dz-started {
+        text-align: right !important;
+    }
+    p {
+        opacity: 0.83;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .fas {
+        color: $green;
+    }
+    .fa-image {
+        color: $green;
+        display: block;
+        margin: 10px auto;
+        font-size: 65px;
+    }
+}
+
+.dz-message.needsclick img {
+    width: 50px;
+    display: block;
+    margin: auto;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+span.plus {
+    display: none;
+}
+
+.dropzone.dz-started .dz-message {
+    display: inline-block !important;
+    width: 120px;
+    float: left;
+    border: 1px solid rgba(238, 238, 238, 0.36);
+    border-radius: 30px;
+    height: 120px;
+    margin: 16px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.dropzone.dz-started .dz-message span.text {
+    display: none;
+}
+
+.dropzone.dz-started .dz-message span.plus {
+    display: block;
+    font-size: 70px;
+    color: #AAA;
+    line-height: 110px;
+}
+
+.add-service {
+    .title {
+        cursor: pointer;
+    }
+    .service-form {
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16) !important;
+        border: 1px solid #A2A2A2 !important;
+        border-radius: 2px;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        display: none;
+        .service-box {
+            .serv-head {
+                background: #EFF0F2;
+                .delete-service {
+                    color: $green;
+                    zoom: 0.8;
+                    line-height: 40px;
+                    cursor: pointer;
+                }
+            }
+            &:not(:first-child) {
+                .serv-head {
+                    border-top: 1px solid #A2A2A2 !important;
+                }
+            }
+            .form-body {
+                padding: 10px
+            }
+        }
     }
 }

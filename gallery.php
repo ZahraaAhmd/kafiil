@@ -747,7 +747,7 @@
                     </div>
                 </div>
             </div>
-            <div role="tabpanel" class="tab-pane" id="profile">
+            <div role="tabpanel" class="tab-pane" id="best">
                 <div class="text-center">
                     <h2>أفضل الأعمال في كفيل</h2>
                     <p>نعرض لك افضل الاعمال في كفيل</p>
@@ -761,7 +761,7 @@
                             </select>
                     </div>
                 </div>
-                <div class="mt-5 mb-5">
+                <div class="filters-content mt-5 mb-5">
 
                     <div class="row">
                         <div class="col-md-3 col-sm-6 col-12">

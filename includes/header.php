@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+     <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.0/css/bootstrap-slider.min.css">
+        <link rel="stylesheet" href="css/dropzone.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="sass/style.css">
     <title>كفيل</title>

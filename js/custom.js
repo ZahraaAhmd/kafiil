@@ -88,6 +88,12 @@ $(document).ready(function() {
     $(".popup-sm .filter-menu .fa-close").click(function() {
         $(".popup-sm").hide();
     });
+    $(".add-service .title").click(function() {
+        $(".service-form").toggle()
+    });
+    $(".delete-service").click(function() {
+        $(this).parents(".service-box").remove()
+    })
 });
 
 
@@ -108,7 +114,6 @@ $(".qt-minus").click(function() {
 
 });
 
-/***home page scripts **** */
 
 /**select2 js**/
 
@@ -330,3 +335,60 @@ function _select_option(indx, selc) {
 $('.card .carousel').carousel({
     interval: false,
 });
+/** tab slider script** */
+
+$('#exampleNav a').click(function(event) {
+    $(this).tab('show');
+    event.preventDefault();
+});
+
+// Default Setup
+$('.boot-tab-slider').bootTabSlider({
+    complete: function() {
+        console.log("Completed");
+    }
+});
+
+/***home page scripts **** */
+/**flter options script ** */
+$('.filters ul li').click(function() {
+    $('.filters ul li').removeClass('active');
+    $(this).addClass('active');
+
+    var data = $(this).attr('data-filter');
+    $grid.isotope({
+        filter: data
+    })
+});
+
+var $grid = $(".grid").isotope({
+    itemSelector: ".all",
+    percentPosition: true,
+    layoutMode: 'fitRows',
+    originLeft: false,
+    masonry: {
+        columnWidth: ".all"
+    }
+});
+$("#p-range").slider({});
+var myDropzone = new Dropzone("div#myId", {
+    url: "/submit-mortgage"
+});
+/** upload files script * */
+Dropzone.options.myId = {
+    maxFilesize: 12,
+    renameFile: function(file) {
+        var dt = new Date();
+        var time = dt.getTime();
+        return time + file.name;
+    },
+    acceptedFiles: ".jpeg,.jpg,.png,.gif",
+    addRemoveLinks: true,
+    timeout: 5000,
+    success: function(file, response) {
+        console.log(response);
+    },
+    error: function(file, response) {
+        return false;
+    }
+};

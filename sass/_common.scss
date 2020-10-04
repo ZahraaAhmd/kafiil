@@ -167,6 +167,10 @@ p {
         small {
             color: #A2A2A2
         }
+        .stat {
+            color: #144660;
+            margin-left: 10px;
+        }
         .float-left {
             color: #CBCBCB;
             .dropdown {
@@ -442,4 +446,50 @@ p {
 .slick-dots li.slick-active button:before {
     color: $blue;
     opacity: 1;
+}
+
+.boot-tab-slider {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.boot-tab-slider__wrapper {
+    overflow: hidden;
+    direction: ltr
+}
+
+.lSSlideOuter.lSrtl,
+.rtl {
+    direction: rtl
+}
+
+.boot-tab-slider .nav-tabs {
+    position: relative;
+    left: 0;
+    width: 10000px;
+    transition: left .6s
+}
+
+.boot-tab-slider__scroll-left,
+.boot-tab-slider__scroll-right {
+    position: absolute;
+    display: none;
+    top: 2px;
+    font-size: 26px;
+    color: #161414
+}
+
+.boot-tab-slider__scroll-left i,
+.boot-tab-slider__scroll-right i {
+    font-size: 26px;
+    color: #161414
+}
+
+.boot-tab-slider__scroll-left {
+    left: -5px
+}
+
+.boot-tab-slider__scroll-right {
+    right: -5px
 }
